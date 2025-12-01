@@ -13,12 +13,12 @@ La aplicación permite:
 
 - Desarrollada en Kotlin
 - Utiliza Jetpack Compose para la interfaz de usuario
-- Implementa el patrón de diseño MVVM (Model-View-ViewModel)
 - Manejo de imágenes con las APIs nativas de Android
 
 ## Librerías utilizadas
 
-El proyecto utiliza las siguientes dependencias principales:
+El proyecto utiliza las siguientes dependencias principales, las cuales ya vienen incluidas 
+en el proyecto por defecto
 
 - `androidx.core:core-ktx` - Extensiones de Kotlin para Android
 - `androidx.lifecycle:lifecycle-runtime-ktx` - Componentes del ciclo de vida de Android

@@ -49,10 +49,11 @@ fun ImageTransformApp() {
             // 2️⃣ Guardamos la versión PNG
             val outputFile = File(imageDir, "android_convertida.png")
             val output = FileOutputStream(outputFile)
-            bitmap.compress(Bitmap.CompressFormat.PNG, 90, output)
+            bitmap.compress(Bitmap.CompressFormat.PNG, 10, output)
             output.close()
 
             // 3️⃣ Leemos la imagen convertida
+            println("Ruta del fichero convertido $outputFile")
             val converted = BitmapFactory.decodeFile(outputFile.absolutePath)
             convertedBitmap = converted
         }) {

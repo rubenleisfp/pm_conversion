@@ -38,7 +38,7 @@ fun ImageTransformApp() {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.spacedBy(20.dp)
     ) {
-        Text("Conversión de imagen PNG → JPG", style = MaterialTheme.typography.titleLarge)
+        Text("Conversión de imagen JPG → PNG", style = MaterialTheme.typography.titleLarge)
 
         Button(onClick = {
             // 1️⃣ Simulamos carga de una imagen desde el almacenamiento interno o assets
@@ -49,6 +49,7 @@ fun ImageTransformApp() {
             // 2️⃣ Guardamos la versión PNG
             val outputFile = File(imageDir, "android_convertida.png")
             val output = FileOutputStream(outputFile)
+            //La calidad no afecta realmente a PNG
             bitmap.compress(Bitmap.CompressFormat.PNG, 10, output)
             output.close()
 
